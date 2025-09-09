@@ -1,58 +1,56 @@
-# 🚀 Multi-Chain Token Payment for Flarum
+# 🚀 CryptoFX OneSignal Notifications
 
-[![Latest Version](https://img.shields.io/packagist/v/cryptopay/flarum-token-payment.svg?style=flat-square)](https://packagist.org/packages/cryptopay/flarum-token-payment)
-[![Total Downloads](https://img.shields.io/packagist/dt/cryptopay/flarum-token-payment.svg?style=flat-square)](https://packagist.org/packages/cryptopay/flarum-token-payment)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+**Real-time push notifications for your Flarum crypto & forex trading community**
 
-Accept **any ERC20 token** on **any EVM blockchain** as payment for forum points/credits. Fully automated with blockchain verification and instant point crediting.
+[![Flarum](https://img.shields.io/badge/flarum-%5E1.0-blue)](https://flarum.org)
+[![OneSignal](https://img.shields.io/badge/OneSignal-Web%20Push-red)](https://onesignal.com)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-## 🌐 **Supported Blockchains**
+---
 
-| Network | Chain ID | Explorer | API |
-|---------|----------|----------|-----|
-| **Ethereum** | 1 | etherscan.io | ✅ |
-| **BNB Smart Chain** | 56 | bscscan.com | ✅ |
-| **Polygon** | 137 | polygonscan.com | ✅ |
-| **Avalanche** | 43114 | snowtrace.io | ✅ |
-| **Arbitrum One** | 42161 | arbiscan.io | ✅ |
-| **Optimism** | 10 | optimistic.etherscan.io | ✅ |
-| **Fantom** | 250 | ftmscan.com | ✅ |
-| **Cronos** | 25 | cronoscan.com | ✅ |
-| **Gnosis Chain** | 100 | gnosisscan.io | ✅ |
-| **Moonbeam** | 1284 | moonscan.io | ✅ |
+## 📊 **Perfect For Trading Communities**
 
-> **Want more chains?** Open an issue - we add new EVM chains regularly!
+- **Crypto Trading Forums** - Bitcoin, Ethereum, DeFi signals
+- **Forex Communities** - Currency pair alerts  
+- **Trading Signal Groups** - Real-time market notifications
+- **Investment Forums** - Breaking news alerts
 
-## 💫 **Key Features**
+---
 
-### 🔗 **Multi-Chain Support**
-- **Any EVM blockchain** - Ethereum, BSC, Polygon, Avalanche, and more
-- **Any ERC20 token** - USDC, USDT, DAI, LINK, custom tokens
-- **Automatic API selection** - Smart routing to correct explorer
+## ⚡ **Key Features**
 
-### ⚡ **Instant Automation**
-- **Auto-verification** - Blockchain confirmations checked automatically
-- **Auto-crediting** - Points added to account immediately after verification
-- **Real-time status** - Users see confirmation progress live
+### 🎯 **Smart Signal Detection**
+- **Auto-detects crypto signals** → Adds ₿ Bitcoin emoji
+- **Identifies forex pairs** → Adds 💱 Currency emoji  
+- **General trading posts** → Adds 📊 Chart emoji
 
-### 🛡️ **Enterprise Security**
-- **Blockchain verification** - Every payment verified on-chain
-- **Confirmation requirements** - Configurable block confirmations (default: 3)
-- **Duplicate prevention** - No transaction can be used twice
-- **Amount validation** - Exact token amounts verified
-- **Rate limiting** - Prevents spam and abuse
+### 🚀 **Instant Notifications**
+- **Real-time push** to all subscribers
+- **Works on desktop & mobile** browsers
+- **High priority delivery** for time-sensitive signals
+- **Custom notification sounds** (configurable)
 
-### 🎨 **User Experience**
-- **One-click payments** - Simple modal interface
-- **Chain detection** - Shows current network and token
-- **Progress tracking** - Real-time verification status
-- **Transaction links** - Direct links to blockchain explorer
-- **Mobile responsive** - Works on all devices
+### 🔧 **Easy Setup**
+- **4 files only** - minimal footprint
+- **OneSignal integration** - enterprise-grade delivery
+- **Admin panel configuration** - no coding required
+- **Automatic user subscription** - seamless UX
 
-## 🚀 **Installation**
+---
 
-### Via Composer (Recommended)
+## 📦 **Installation**
+
+### **Method 1: Manual Installation**
+
 ```bash
-composer require cryptopay/flarum-token-payment:"*"
-php flarum migrate
+# 1. Create extension directory
+mkdir -p extend/cryptofx-onesignal
+
+# 2. Download extension files
+# (Download all files from this repository to the directory above)
+
+# 3. Enable extension
+php flarum extension:enable cryptofxsignal-flarum-onesignal
+
+# 4. Clear cache
 php flarum cache:clear
