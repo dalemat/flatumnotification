@@ -1,0 +1,25 @@
+{
+    "name": "cryptofxsignal/flarum-onesignal",
+    "description": "OneSignal Push Notifications for CryptoFX Signal Forum",
+    "type": "flarum-extension",
+    "keywords": ["flarum", "extension", "notifications", "push", "onesignal", "crypto", "forex"],
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "CryptoFX OneSignal Notifications",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-signal",
+                "color": "#f39c12"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "CryptoFXSignal\\OneSignal\\": "src/"
+        }
+    }
+}
